@@ -7,7 +7,10 @@ burger.addEventListener("click", () => {
 });
 const kids_sec= document.querySelector(".button-learn");
 const adult_sec= document.querySelector(".button-learn2");
-
+const contact = document.querySelector("#cnt")
+cnt.addEventListener("click", () => {
+  window.location.href = "contact_page.html";
+  });
 kids_sec.addEventListener("click", () => {
 window.location.href = "kids-sec.html";
 });

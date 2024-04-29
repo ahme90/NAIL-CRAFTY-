@@ -7,7 +7,13 @@ let thumbnail = document.querySelector('.slider .thumbnail')
 let thumbnailItems = thumbnail.querySelectorAll('.item')
 
 thumbnail.appendChild(thumbnailItems[0])
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
 
+burger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  burger.classList.toggle("toggle");
+});
 // Function for next button 
 nextBtn.onclick = function() {
     moveSlider('next')

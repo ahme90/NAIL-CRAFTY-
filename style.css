@@ -1,10 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+body {
+  /* background-color: rgb(2, 75, 88); */
+  width: 100%;
+  height: 100%;
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #01788D;
+  background-image: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  width: 9vw;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 0.7.5vw;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#bee900, #a83131);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-12:disabled {
+  cursor: default;
+}
+
+.btn-12:-moz-focusring {
+  outline: auto;
+}
+
+.btn-12 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-12 [hidden] {
+  display: none;
+}
+
+.btn-12 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-12 span {
+  mix-blend-mode: difference;
+}
+
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(
+    90deg,
+    #141414 25%,
+    transparent 0,
+    transparent 50%,
+    #000000 0,
+    #000000 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+  z-index: -1;
+}
+
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #000000 0,
+    #000000 50%,
+    transparent 0,
+    transparent 75%,
+    #000000 0
+  );
+  z-index: -1;
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+
 
 nav ul {
   padding: 5px 10px;
@@ -23,16 +130,7 @@ body::-webkit-scrollbar{
   background-color: #0098B1;
   border-radius: 20px;
 }
-body {
-  /* background-color: rgb(2, 75, 88); */
-  width: 100%;
-  height: 100%;
-  --color: #E1E1E1;
-  background-color: #F3F3F3;
-  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
-      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
-  background-size: 55px 55px;
-}
+
 
 nav {
   position:relative;
@@ -50,7 +148,7 @@ nav {
   z-index: +999;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 10px;
   padding-right: 10px;
   color: #fffefe;
@@ -88,6 +186,7 @@ nav {
   color: rgb(0, 0, 0);
   background-color: #4c9e9e;
   border-radius: 20px;
+  letter-spacing: 5px;
   padding: 5px 7px;
 }
 
@@ -377,7 +476,7 @@ margin-left: 5%;
   right: 50%;
   box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.562);
 border-radius:50px ;
-  background: rgb(235, 188, 103);
+  background: rgba(223, 147, 6, 0.534);
   --gap: 5em;
   --line: 2px;
   --color: rgba(0, 0, 0, 0.2);
@@ -874,6 +973,12 @@ ul li a:hover{
 }
 /* footer responsive */
 @media(max-width: 740px){
+  .btn-12{
+
+    font-size:8px;
+    padding: 1px 2px;
+ width: 20vw;
+  }
   .footer-col{
       width: 50%;
       margin-bottom: 30px;

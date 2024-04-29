@@ -1,3 +1,10 @@
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
+
+burger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  burger.classList.toggle("toggle");
+});
 let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
 
@@ -5,9 +12,10 @@ let slider = document.querySelector('.slider')
 let sliderList = slider.querySelector('.slider .list')
 let thumbnail = document.querySelector('.slider .thumbnail')
 let thumbnailItems = thumbnail.querySelectorAll('.item')
+let jellynails = document.querySelector('#child-btn-1')
+let glitterynails = document.querySelector('#child-btn-2')
 
 thumbnail.appendChild(thumbnailItems[0])
-
 // Function for next button 
 nextBtn.onclick = function() {
     moveSlider('next')
@@ -43,3 +51,9 @@ function moveSlider(direction) {
         }
     }, {once: true}) // Remove the event listener after it's triggered once
 }
+jellynails.addEventListener('click', function() {
+    window.location.href = "jelly_nails.html";
+})
+glitterynails.addEventListener('click', function() {
+    window.location.href = "glitteraura.html";
+})
