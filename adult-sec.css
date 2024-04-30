@@ -30,7 +30,7 @@ body{
   background-image: none;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
-  width: 9vw;
+  width: 11vw;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -477,6 +477,9 @@ nav {
     }
 }
 @media screen and (max-width: 678px) {
+  .btn-12{
+    height: 8vw;
+  }
     /* responsive nav */
     .nav-links {
       display: none;
