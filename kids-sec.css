@@ -139,14 +139,14 @@ nav {
   margin-right: 2.5%;
   /* border: 1px solid black !important; */
   border-radius: 20px;
-  background-color:#e6a836be ;
+  background-color:#E3A93F;
   /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.562); */
   backdrop-filter: blur(2px);
 
   z-index: +999;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
   color: #fffefe;

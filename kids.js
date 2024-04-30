@@ -14,6 +14,8 @@ let thumbnail = document.querySelector('.slider .thumbnail')
 let thumbnailItems = thumbnail.querySelectorAll('.item')
 let jellynails = document.querySelector('#child-btn-1')
 let glitterynails = document.querySelector('#child-btn-2')
+let catnails = document.querySelector('#child-btn-3')
+let frenchnails = document.querySelector('#child-btn-4')
 
 thumbnail.appendChild(thumbnailItems[0])
 // Function for next button 
@@ -56,4 +58,10 @@ jellynails.addEventListener('click', function() {
 })
 glitterynails.addEventListener('click', function() {
     window.location.href = "glitteraura.html";
+})
+catnails.addEventListener('click', function() {
+    window.location.href = "cateye.html";
+})
+frenchnails.addEventListener('click', function() {
+    window.location.href = "french.html";
 })

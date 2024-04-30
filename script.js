@@ -1,6 +1,7 @@
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav-links");
 timeline1 = document.querySelector("#btn1");
+const sign = document.querySelector(".btn-12");
 
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
@@ -12,7 +13,10 @@ const contact = document.querySelector("#cnt")
 timeline1.addEventListener("click", () => {
   window.location.href = "glitteraura.html";
   });
-cnt.addEventListener("click", () => {
+  sign.addEventListener("click", () => {
+    window.location.href = "signup-in.html";
+    });
+  cnt.addEventListener("click", () => {
   window.location.href = "contact_page.html";
   });
 kids_sec.addEventListener("click", () => {

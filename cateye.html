@@ -48,10 +48,10 @@ body{
   -webkit-appearance: button;
   background-color: #01788D;
   background-image: none;
+  height: 5vh;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
-  width: 11vw;
-  height: 5vh;
+  width: 9vw;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -161,14 +161,14 @@ nav {
   margin-right: 2.5%;
   /* border: 1px solid black !important; */
   border-radius: 20px;
-  background-color:#E3A93F;
+  background-color:#e6a836be ;
   /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.562); */
   backdrop-filter: blur(2px);
 
   z-index: +999;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 10px;
   padding-right: 10px;
   color: #fffefe;
@@ -406,14 +406,8 @@ body {
   font-size: 1.25rem;
   color: black;
 }
-/* responsive nav */
 @media screen and (max-width: 678px) {
-  .btn-12{
-
-font-size:8px;
-padding: 1px 2px;
-width: 20vw;
-}
+  /* responsive nav */
   .nav-links {
     display: none;
     position: absolute;
@@ -422,7 +416,7 @@ width: 20vw;
     right: 0;
     width: 40%;
     height: 100vh;
-    background-color: rgb(37, 110, 110);
+    background-color: #E9BB66;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -440,8 +434,15 @@ width: 20vw;
   .home-container {
     display: flex;
     flex-direction: column;
-  }}
+    
+  }
+  .btn-12{
 
+font-size:8px;
+padding: 1px 2px;
+width: 20vw;
+}
+}
 @media (width > 768px) {
   nav {
     position: static;
@@ -543,45 +544,44 @@ width: 20vw;
   </head>
   <body>
     <nav>
-        <div class="logo">
-          <img src="logo.png" alt="" height="130" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          
-        </ul>
-        <div class="up">
-        <button class="btn-12" id="sign">SIGN UP/IN</button>
+      <div class="logo">
+        <img src="logo.png" alt="" height="130" />
       </div>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        
+      </ul>
+      <div class="up">
+      <button class="btn-12" id="sign">SIGN UP/IN</button>
+    </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
     <div class="container">
       <div class="container__left">
-        <h1>GLITTER AURA NAILS !</h1>
+        <h1>CAT EYE NALS!</h1>
         <div class="container__btn">
           <button class="btn">Give Thumbs UP!</button>
         </div>
       </div>
       <div class="container__right">
         <div class="images">
-          <img src="https://media.allure.com/photos/65cd20c3e096da3079dc4584/master/w_1600,c_limit/nail%20trends%20imgs11.jpg" alt="tent-1" class="tent-1" />
-          <img src=" https://media.allure.com/photos/65cd20c2c25048cfa51b2f6f/master/w_1600,c_limit/nail%20trends%20imgs10.jpg" alt="tent-2" class="tent-2" />
+          <img src="https://media.allure.com/photos/65cd20c2991c132135b9185e/master/w_1600,c_limit/nail%20trends%20imgs9.jpg" alt="tent-1" class="tent-1" />
+          <img src="https://media.allure.com/photos/65cd20c01b4af20f4b57a8a6/master/w_1600,c_limit/nail%20trends%20imgs5.jpg" alt="tent-2" class="tent-2" />
         </div>
         <div class="content">
           <h4>kids,</h4>
           <h2>Info !</h2>
-          <h3>All About Glitter Aura Nails !</h3>
+          <h3>All About Cat Eye Nails!</h3>
           <p>
           
-            Glitter Aura Nails
-            Aura nails are nothing new… but Honey does have a suggestion to make them glisten: Swap out the chrome of last year for a layer of glitter over the aura designs. “I recommend using UN/DN LAQR in shade Deep Breath, made with a mylar glitter to make your nails pop,” says Honey.        </div>
+            Cat Eye nails are back in a fresh palette. This spring, experiment with the glittering finish over seasonal colors like pastel yellows and soft, muted blues. If you can’t make a trip to the salon, a simple DIY way to achieve this look is with a magnetic nail polish like the V Beauty Pure Rainbow Cat Eye polish. After coating your nails in the polish, “use a nail magnet to manipulate the particles into any design you’d like,” says Yess.        </div>
       </div>
       <div  class="location">
         <span><i class="ri-map-pin-2-fill"></i></span>
@@ -601,17 +601,18 @@ width: 20vw;
     </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    const sign =document.getElementById("sign");
-    const burger = document.querySelector(".burger");
+    <script>
+       const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav-links");
-sign.addEventListener("click", () =>{
-  window.location.href="signup-in.html"
-})
+const sign = document.querySelector("#sign");
+
+sign.addEventListener("click", () => {
+    window.location.href = "signup-in.html";
+    });
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   burger.classList.toggle("toggle");
 });
-  </script>
+    </script>
   </body>
 </html>

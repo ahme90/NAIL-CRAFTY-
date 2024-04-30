@@ -48,6 +48,7 @@ body{
   -webkit-appearance: button;
   background-color: #01788D;
   background-image: none;
+  height: 5vh;
   color: hsl(0, 0%, 100%);
   cursor: pointer;
   width: 9vw;
@@ -415,7 +416,7 @@ body {
     right: 0;
     width: 40%;
     height: 100vh;
-    background-color: rgb(37, 110, 110);
+    background-color: #E9BB66;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -554,8 +555,7 @@ width: 20vw;
         
       </ul>
       <div class="up">
-      <button class="btn-12">SIGN UP</button>
-      <button class="btn-12">SIGN UP</button>
+      <button class="btn-12" id="sign">SIGN UP/IN</button>
     </div>
       <div class="burger">
         <div class="line1"></div>
@@ -602,11 +602,14 @@ width: 20vw;
     </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
     <script>
        const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav-links");
+const sign = document.querySelector("#sign");
 
+sign.addEventListener("click", () => {
+    window.location.href = "signup-in.html";
+    });
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   burger.classList.toggle("toggle");
