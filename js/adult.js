@@ -1,6 +1,21 @@
 let nextBtn = document.querySelector('.next')
 let prevBtn = document.querySelector('.prev')
-
+const adult_1 = document.querySelector('#adult_1');
+const adult_2 = document.querySelector('#adult_2');
+const adult_3 = document.querySelector('#adult_3');
+const adult_4 = document.querySelector('#adult_4');
+adult_4.addEventListener('click',() =>{
+    window.location.href = "Golden ticket.html";
+})
+adult_3.addEventListener('click',() =>{
+    window.location.href = "Almond swirl.html";
+})
+adult_2.addEventListener('click',() =>{
+    window.location.href = "Gold rim.html";
+})
+adult_1.addEventListener('click',() =>{
+    window.location.href = "Bedazzled.html";
+})
 let slider = document.querySelector('.slider')
 let sliderList = slider.querySelector('.slider .list')
 let thumbnail = document.querySelector('.slider .thumbnail')

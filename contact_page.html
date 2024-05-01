@@ -50,13 +50,13 @@ textarea {
 }
 
 .contact-form {
-  background-color: #01788D;
+  background-color: #E3A93F;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #12e9be);
+  background: linear-gradient(135deg, transparent 20%, #724b02);
   position: absolute;
 }
 
@@ -79,7 +79,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #0eeb8f;
+  background-color: #000000;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -151,7 +151,7 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: #E3A93F;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -185,7 +185,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #068f94;
+  background-color:#E3A93F;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -217,7 +217,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: #E3A93F;
 }
 
 .text {
@@ -255,7 +255,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #0505054f, #E3A93F);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -272,7 +272,7 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #1abc9c;
+  border: 22px solid #E3A93F;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -284,7 +284,7 @@ textarea.input {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #02dbeb, #159b80);
+  background: linear-gradient(to bottom, #ffa704, #E3A93F);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -309,7 +309,31 @@ textarea.input {
   transform: translate(181%, 11%);
   opacity: 0.2;
 }
-
+#btn_back{
+width: 30%;
+margin-left: 35%;
+margin-right: 35%;
+height: 40px;
+border-radius: 20px;
+border: none ;
+margin-bottom: 2vh;
+background-color: #E3A93F;
+font-size: 15px;
+text-transform: capitalize;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing: 2px;
+color: white;
+transition: 0.3s ease-in-out;
+cursor: pointer;
+margin-top: 2vh;
+}
+#btn_back:hover{
+  background-color: white;
+  color: #E3A93F;
+  border: 1px solid #E3A93F;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
 @media (max-width: 850px) {
   .form {
     grid-template-columns: 1fr;
@@ -471,12 +495,17 @@ textarea.input {
             <input type="submit" value="Send" class="btn" />
           </form>
         </div>
+    <button id="btn_back"> Go back</button>
+
       </div>
     </div>
 
     <script>
+      const back =document.querySelector('#btn_back');
 const inputs = document.querySelectorAll(".input");
-
+back.addEventListener("click", () =>{
+  window.history.back();
+})
 function focusFunc() {
   let parent = this.parentNode;
   parent.classList.add("focus");
